@@ -1,43 +1,33 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+html,body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.bg_box{
+    
+    width:400%;
+    height:100%;
+    background-image: linear-gradient(125deg,#ED4C67,#D980FA,#9980FA,#5758BB,#B53471,#ED4C67);
+    background-size:400%;
+    animation:bgmove 15s infinite;
+
+  
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+@keyframes bgmove{
+    0%{
+        background-position:0% 50%;
 
-ul.posts li {
-    list-style: none;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+
 }
