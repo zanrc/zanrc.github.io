@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 
 <body>
     <div class="navigation_bar" >
-        <div class="navigation_but" style="margin-left:0.5vh">
-            <div class="line" style="margin-top:1vh"></div>
-            <div class="line" style="margin-top:0.75vh;margin-bottom:0.75vh;"></div>
-            <div class="line"></div>
-        </div>
+        <div class="navigation_but" style="margin-left:0.5vh" id="navigation_but" @click="turn" >
+            <div id="l1" class="line" style="" v-bind:class="{'active1':isActive}"></div>
+            <div id="l2" class="line line2" v-bind:class="{'active2':isActive}"></div>
+            <div id="l3" class="line" v-bind:class="{'active3':isActive}"></div>
+        </div>    
     </div>
 
     <div class="top_box">
-        <div>
-            
-         <img class="bg_picture" src="http://m.qpic.cn/psc?/V13QtIeY3mG913/ruAMsa53pVQWN7FLK88i5hZur.Ts4l0eU2nv14AszNpIrWVcEpor2UGA6wy1IOU5gH4WznSlTjKZrQWnJ4RfWn*LujRTIzl88o*OiJ293c8!/b&bo=2AGAAtgBgAIBCS4!&rf=viewer_4" />
-            
-        </div>
+        <div class="top_left"> </div>
+        <div class="top_right"></div>
+        <!--
+    <div>
+     <img class="bg_picture" src="http://m.qpic.cn/psc?/V13QtIeY3mG913/ruAMsa53pVQWN7FLK88i5hZur.Ts4l0eU2nv14AszNpIrWVcEpor2UGA6wy1IOU5gH4WznSlTjKZrQWnJ4RfWn*LujRTIzl88o*OiJ293c8!/b&bo=2AGAAtgBgAIBCS4!&rf=viewer_4" />
+    </div>
+            -->
     </div>
 
     <div class="middle_box content">
@@ -34,10 +37,36 @@
     <div class="contact_bar">      
             <a  class ="qzone" href="https://user.qzone.qq.com/2644480763/main">关于我</a>
     </div>
+
+    <!--************************************************************************************************-->
+    
+    <script>
+        new Vue({
+            el: '#navigation_but',
+            data:{
+                isActive: false
+
+            },
+            methods: {
+                turn: function (event) {                   
+                    this.isActive = !this.isActive;
+                   
+                    
+                }
+
+
+            }
+
+
+        })
+
+
+    </script>
+
+
 </body>
 </html>
 
   
-
 
 
