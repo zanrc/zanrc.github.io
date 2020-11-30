@@ -79,17 +79,27 @@ a:hover {
     margin-top: 100%;
 }
 .navigation_bar.a{
-    
-
+   
 }
 
 .navigation_bar {
     width: 100%;
-    height: auto;
+    height: 5vh;
     background-color: #1e272e;
     position: fixed;
     top: 0;
-    display:flex;
-    justify-content:space-around;
- 
+    padding:1vh;
+}
+
+.navigation_but {
+    width: 5vh;
+    height: 5vh;
+    overflow:hidden;
+}
+
+.line {
+    width: 4vh;
+    height: 0.5vh;
+    background-color: #d2dae2;
+    border-radius: 10%;
 }
