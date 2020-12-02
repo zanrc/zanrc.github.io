@@ -35,9 +35,7 @@ html,body {
     float:left;
     padding:0;
     margin:0;
-    
-    
-    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -63,7 +61,7 @@ html,body {
     position: absolute;
     top: 56vh;
     left: 8vh;
-    font-size:6vh;
+    font-size: 6vh;
     font-family: Georgia;
     transform-origin: left bottom;
     transform: rotate(-90deg);
@@ -217,18 +215,17 @@ a:hover {
 
 
 .navigation_bar {
-    z-index:100;
     width:100%;
     height: 5vh;
     background-color: #1e272e;
     position: fixed;
     top: 0;
+    z-index:100;
     padding:1vh;
   
 }
 
 .navigation_but {
-    
     margin-top: 1vh;
     width: 5vh;
     height: 3.5vh;
@@ -243,7 +240,7 @@ a:hover {
     background-color: #d2dae2;
     border-radius: 10%;
     transform-origin:left;
-    transition: all 1s;
+    transition: all 0.5s;
    
 }
 .line2 {
@@ -265,3 +262,24 @@ a:hover {
    transform:rotate(-36deg);
 }
 
+
+.select_bar {
+    border-radius: 0% 0% 3vh 3vh;
+    z-index: 100;
+    position: fixed;
+    background-color: #1e272e;
+    top: 7vh;
+    left:-1vh;
+    width: 40%;
+    height: 0vh;
+    transition: all 0.5s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    overflow:hidden;
+    transition: all 0.5s;
+}
+
+.select_show {
+    height: 40vh;
+}
