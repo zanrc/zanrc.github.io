@@ -8,6 +8,7 @@ html,body {
     width: 100%;
     height: 90vh;
     background-color: rgb(186,194,183);
+    overflow:hidden;
  
 }
 .top_left {
@@ -15,30 +16,153 @@ html,body {
     width: 65%;
     height: 90vh;
     background-color: white;
+   
 }
 .top_right {
+    
     float:right;
-    width: 35%;
+    width:35%;
     height: 90vh;
-    background-color: rgb(91,132,98);
+    overflow:hidden;
+    animation:color 25s ease-in infinite;
+    
 }
-.bg_picture {
+
+
+.jpg {
     width: 30vh;
-    display: block;
-    margin: 0 auto;
-    margin-top: 15%;
+    height:30vh;
+    float:left;
+    padding:0;
+    margin:0;
+    
+    
     
 }
 
 @media screen and (max-width: 768px) {
-    .bg_picture {
-        width: 30vh;
-        display: block;
-        margin: 0 auto;
-        margin-top: 25%;
-        margin-bottom: 25%;
+    .jpg {
+        width: 30vh; 
     }
 }
+
+.top_text1 {
+    position: absolute;
+    top: 8vh;
+    left: 2vh;
+    font-size: 3vh;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    color: white;
+    border-radius: 10%;
+    line-height: inherit;
+    font-family:'Comic Sans MS';
+    animation: color 25s ease-in infinite;
+}
+.top_text2 {
+    position: absolute;
+    top: 57vh;
+    left: 10vh;
+    font-size: 8vh;
+    font-family: Georgia;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    animation: tcolor 25s ease-in infinite;
+}
+
+
+.container {
+    z-index: 1;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top:33vh;
+    left:15vh;
+    overflow:hidden;
+    
+    
+}
+.photo {
+    
+    width: 180vh;
+    height: 30vh;
+    animation: switch 25s infinite;
+    animation-timing-function:ease-in-out;
+}
+@keyframes switch{
+   0%,6%,100%{
+       margin-left:0;
+
+   }
+   10%,16% ,90%,96%{
+       margin-left: -30vh;
+   }
+    20%,26% ,80%,86%{
+        margin-left: -60vh;
+    }
+    30%,36% ,70%,76%{
+        margin-left: -90vh;
+    }
+    40%,46% ,60%,66%{
+        margin-left: -120vh;
+    }
+   50%,56%{
+       margin-left:-150vh;
+   }
+   
+}
+@keyframes color {
+    0%,6%,100% {
+        background-color: #0a0809;
+    }
+
+    10%,16%,90%,96% {
+        background-color: #9c7854;
+    }
+
+    20%,26%,80%,86% {
+        background-color: #c8b89f;
+    }
+
+    30%,36%,70%,76% {
+        background-color: #b38c8d;
+    }
+
+    40%,46%,60%,66% {
+        background-color: #616f89;
+    }
+
+    50%,56% {
+        background-color: #9aa05a;
+    }
+}
+@keyframes tcolor {
+    0%,6%,100% {
+       color: #0a0809;
+    }
+
+    10%,16%,90%,96% {
+       color: #9c7854;
+    }
+
+    20%,26%,80%,86% {
+        color: #c8b89f;
+    }
+
+    30%,36%,70%,76% {
+       color: #b38c8d;
+    }
+
+    40%,46%,60%,66% {
+       color: #616f89;
+    }
+
+    50%,56% {
+       color: #9aa05a;
+    }
+}
+
+
 
 .middle_box {
     margin-top: 3px;
@@ -46,6 +170,7 @@ html,body {
     height: auto;
     background-color: rgb(210,201,192);
     overflow: hidden;
+    
 }
 
 .bottom_box {
@@ -89,9 +214,7 @@ a:hover {
     clear: both;
     margin-top: 100%;
 }
-.navigation_bar.a{
-   
-}
+
 
 .navigation_bar {
     width:100%;
@@ -100,6 +223,7 @@ a:hover {
     position: fixed;
     top: 0;
     padding:1vh;
+  
 }
 
 .navigation_but {
@@ -138,3 +262,4 @@ a:hover {
  
    transform:rotate(-36deg);
 }
+
