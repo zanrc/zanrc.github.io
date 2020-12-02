@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-</head>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head >
 
 <body>
-    <div class="navigation_bar" >
-        <div class="navigation_but" style="margin-left:0.5vh" id="navigation_but" @click="turn" >
+    <div class="navigation_bar">
+        <div class="navigation_but" style="margin-left:0.5vh" id="navigation_but" @click="turn">
             <div id="l1" class="line" style="" v-bind:class="{'active1':isActive}"></div>
             <div id="l2" class="line line2" v-bind:class="{'active2':isActive}"></div>
             <div id="l3" class="line" v-bind:class="{'active3':isActive}"></div>
-        </div>    
+
+
+            <div class="select_bar" v-bind:class="{'select_show':isActive}">
+                <a style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family: Georgia">text1</a>
+                <div style="height:0.2vh;background-color:#747d8c;width:70%;margin:0 auto;"></div>
+                <a style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family: Georgia">text1</a>
+                <div style="height:0.2vh;background-color:#747d8c;width:70%;margin:0 auto;"></div>
+                <a style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family: Georgia">text1</a>
+                <div style="height: 0.2vh; background-color: #747d8c; width: 70%; margin: 0 auto;"></div>
+                <a style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family: Georgia">text1</a>
+
+            </div>
+        </div>
     </div>
+
 
     <div class="top_box">
         <div class="top_left">
@@ -37,13 +50,17 @@
         </div>
 
         <div class="top_text1"> zan</div>
-        <div class="top_text2">home page </div> 
+        <div class="top_text2">home page </div>
 
-        <div style="position: absolute;top: 87vh;width:100%;align-content:center;display:flex">
-            <text style="margin:0 auto;font-size: 1.5vh;color:#ED4C67;font-family:Georgia">good afternoon,goood evening,and good night</text>
+        <div style="        position: absolute;
+                top: 87vh;
+                width: 100%;
+                align-content: center;
+                display: flex">
+            <text style="margin: 0 auto; font-size: 1.5vh; color:#a4b0be; font-family: Georgia">good afternoon,goood evening,and good night</text>
         </div>
-        
-       
+
+
     </div>
 
     <div class="middle_box content">
@@ -52,31 +69,60 @@
     <div class="bottom_box content">
     </div>
 
-    <div class="contact_bar">      
-            <a  class ="qzone" href="https://user.qzone.qq.com/2644480763/main">关于我</a>
+    <div class="contact_bar">
+        <a class="qzone" href="https://user.qzone.qq.com/2644480763/main">关于我</a>
     </div>
 
-    <!--************************************************************************************************-->
-    
+    <!--***************************************
+
+
+          
+
+        ********************************************************* -->
+
     <script>
         new Vue({
             el: '#navigation_but',
-            data:{
+            data: {
                 isActive: false
-
             },
             methods: {
-                turn: function (event) {                   
+                turn: function (event) {
                     this.isActive = !this.isActive;
-                   
-                    
                 }
 
-
             }
-
-
         })
+
+
+        var a_idx = 0;
+        jQuery(document).ready(function ($) {
+            $("body").click(function (e) {
+                var a = new Array("⭐", "🌙", "♥", "⚡", "🦄", "🔆", "🎵", "💋", "🐷", "🎈", "🦋", "💭");
+                var $i = $("<span></span>").text(a[a_idx]);
+                a_idx = (a_idx + 1) % a.length;
+                var x = e.pageX,
+                    y = e.pageY;
+                $i.css({
+                    "z-index": 9999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+                });
+                $("body").append($i);
+                $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                    1500,
+                    function () {
+                        $i.remove();
+                    });
+            });
+        });
+
 
 
     </script>
@@ -84,3 +130,7 @@
 
 </body>
 </html>
+
+  
+
+
