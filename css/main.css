@@ -61,9 +61,9 @@ html,body {
 }
 .top_text2 {
     position: absolute;
-    top: 57vh;
-    left: 10vh;
-    font-size: 8vh;
+    top: 56vh;
+    left: 9vh;
+    font-size:7vh;
     font-family: Georgia;
     transform-origin: left bottom;
     transform: rotate(-90deg);
