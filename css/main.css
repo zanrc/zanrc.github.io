@@ -1,44 +1,41 @@
-html,body {
+html, body {
     margin: 0;
     padding: 0;
-    width:100%;
-    
+    width: 100%;
 }
 a:active {
     color: #0000FF
 } 
+
 .top_box {
     width: 100%;
     height: 90vh;
     background-color: rgb(186,194,183);
-    overflow:hidden;
- 
+    overflow: hidden;
 }
+
 .top_left {
     float: left;
     width: 65%;
     height: 90vh;
     background-color: white;
-   
 }
+
 .top_right {
-    
-    float:right;
-    width:35%;
+    float: right;
+    width: 35%;
     height: 90vh;
-    overflow:hidden;
-    animation:color 25s ease-in infinite;
-    
+    overflow: hidden;
+    animation: color 25s ease-in infinite;
 }
 
 
 .jpg {
     width: 30vh;
-    height:30vh;
-    float:left;
-    padding:0;
-    margin:0;
-
+    height: 30vh;
+    float: left;
+    padding: 0;
+    margin: 0;
 }
 
 .top_text1 {
@@ -51,9 +48,10 @@ a:active {
     color: white;
     border-radius: 10%;
     line-height: inherit;
-    font-family:'Comic Sans MS';
+    font-family: 'Comic Sans MS';
     animation: color 25s ease-in infinite;
 }
+
 .top_text2 {
     position: absolute;
     top: 56vh;
@@ -71,41 +69,44 @@ a:active {
     width: 30vh;
     height: 30vh;
     position: absolute;
-    top:33vh;
-    left:15vh;
-    overflow:hidden;
-    
-    
+    top: 33vh;
+    left: 15vh;
+    overflow: hidden;
 }
+
 .photo {
-    
     width: 180vh;
     height: 30vh;
     animation: switch 25s infinite;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
 }
-@keyframes switch{
-   0%,6%,100%{
-       margin-left:0;
 
-   }
-   10%,16% ,90%,96%{
-       margin-left: -30vh;
-   }
-    20%,26% ,80%,86%{
+@keyframes switch {
+    0%,6%,100% {
+        margin-left: 0;
+    }
+
+    10%,16%,90%,96% {
+        margin-left: -30vh;
+    }
+
+    20%,26%,80%,86% {
         margin-left: -60vh;
     }
-    30%,36% ,70%,76%{
+
+    30%,36%,70%,76% {
         margin-left: -90vh;
     }
-    40%,46% ,60%,66%{
+
+    40%,46%,60%,66% {
         margin-left: -120vh;
     }
-   50%,56%{
-       margin-left:-150vh;
-   }
-   
+
+    50%,56% {
+        margin-left: -150vh;
+    }
 }
+
 @keyframes color {
     0%,6%,100% {
         background-color: #0a0809;
@@ -131,13 +132,14 @@ a:active {
         background-color: #9aa05a;
     }
 }
+
 @keyframes tcolor {
     0%,6%,100% {
-       color: #0a0809;
+        color: #0a0809;
     }
 
     10%,16%,90%,96% {
-       color: #9c7854;
+        color: #9c7854;
     }
 
     20%,26%,80%,86% {
@@ -145,15 +147,15 @@ a:active {
     }
 
     30%,36%,70%,76% {
-       color: #b38c8d;
+        color: #b38c8d;
     }
 
     40%,46%,60%,66% {
-       color: #616f89;
+        color: #616f89;
     }
 
     50%,56% {
-       color: #9aa05a;
+        color: #9aa05a;
     }
 }
 
@@ -162,16 +164,15 @@ a:active {
 .middle_box {
     margin-top: 1vh;
     width: 100%;
-
     background-color: #fff8f5;
 }
 
 .bottom_box {
-    margin-top:3px;
+    margin-top: 3px;
     width: 100%;
     height: 100vh;
-    background-color:rgb(230,226,223);
-    overflow:hidden;
+    background-color: rgb(230,226,223);
+    overflow: hidden;
 }
 
 
@@ -182,18 +183,20 @@ a:active {
     background-color: rgb(35,35,35);
     overflow: hidden;
     color: rgb(123,136,136);
-    align-content:center;
-    text-align:center;
+    align-content: center;
+    text-align: center;
 }
 
 a {
     color: #dcdde1;
     text-decoration: none;
-    display:block;
+    display: block;
 }
-a:hover {
-    color: #f5f6fa;
-}
+
+    a:hover {
+        color: #f5f6fa;
+    }
+
 .qzone {
     display: block;
     margin: 0 auto;
@@ -203,14 +206,13 @@ a:hover {
 
 
 .navigation_bar {
-    width:100%;
+    width: 100%;
     height: 5vh;
     background-color: #1e272e;
     position: fixed;
     top: 0;
-    z-index:100;
-    padding:1vh;
-  
+    z-index: 100;
+    padding: 1vh;
 }
 
 .navigation_but {
@@ -227,27 +229,25 @@ a:hover {
     height: 0.5vh;
     background-color: #d2dae2;
     border-radius: 10%;
-    transform-origin:left;
+    transform-origin: left;
     transition: all 0.5s;
-   
 }
+
 .line2 {
-    margin-bottom:1vh;
-    margin-top:1vh;
-   
+    margin-bottom: 1vh;
+    margin-top: 1vh;
 }
+
 .active2 {
     background-color: #1e272e;
 }
 
 .active1 {
-   
-   transform:rotate(36deg);
+    transform: rotate(36deg);
 }
 
 .active3 {
- 
-   transform:rotate(-36deg);
+    transform: rotate(-36deg);
 }
 
 
@@ -257,14 +257,14 @@ a:hover {
     position: fixed;
     background-color: #1e272e;
     top: 7vh;
-    left:-1vh;
+    left: -1vh;
     width: 40%;
     height: 0vh;
     transition: all 0.5s;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
     transition: all 0.5s;
 }
 
@@ -274,15 +274,15 @@ a:hover {
 
 
 .middle_box1 {
-    width:100%;
-    height:25vh;
-    background-color:#c38d69;
-    float:left;
+    width: 100%;
+    height: 25vh;
+    background-color: #c38d69;
+    float: left;
 }
 
-.middle_box1 div {
-   width: 70%;
-}
+    .middle_box1 div {
+        width: 70%;
+    }
 
 .film_photo1 {
     float:left;
@@ -294,34 +294,33 @@ a:hover {
     width: 20vh;
     position: absolute;
     border: 1vh solid #fff8f5;
-    left:14vh;
-    top:183vh;
-    
+    left: 14vh;
+    top: 183vh;
 }
 
 .film_text1 {
     color: #c38d69;
     position: relative;
     left: 33vh;
-    top:32vh;
+    top: 32vh;
     transform-origin: left top;
-    transform:rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
-.content{
-    width:100%;
-    height:18vh;
+.content {
+    width: 100%;
+    height: 18vh;
 }
 
 .spot {
     width: 6vh;
     height: 6vh;
     position: absolute;
-    background-color:#c38d69 ;
-    border-radius:50%;
-    left:43vh;
+    background-color: #c38d69;
+    border-radius: 50%;
+    left: 43vh;
     top: 180vh;
-    opacity:0.2;
+    opacity: 0.2;
 }
 
 .spot1 {
@@ -334,24 +333,24 @@ a:hover {
     top: 250vh;
     opacity: 0.2;
 }
+
 .film_line {
     width: 25vh;
     height: 0.5vh;
     position: absolute;
     background-color: #c38d69;
-    border-radius:1vh;
+    border-radius: 1vh;
     left: 40vh;
     top: 220vh;
     opacity: 0.2;
-    transform-origin:left top;
-    transform:rotate(-90deg);
+    transform-origin: left top;
+    transform: rotate(-90deg);
 }
 
 .film_photo3 {
-    float:right;
-    margin-right:5vh;
+    float: right;
+    margin-right: 5vh;
     width: 25vh;
-    
 }
 
 .film_photo4 {
@@ -367,30 +366,31 @@ a:hover {
     position: relative;
     left: 16vh;
     top: 20vh;
-    font-size:larger;
+    font-size: larger;
     transform-origin: left top;
     transform: rotate(-90deg);
 }
+
 .middle_box2 {
     width: 100%;
     height: 20vh;
     background-color: #c38d69;
-  
 }
+
 @media screen and (min-width: 768px) {
     .middle_box1 {
-    width: 100%;
-    height: 70vh;
-    background-color: #c38d69;
+        width: 100%;
+        height: 70vh;
+        background-color: #c38d69;
+    }
 
-}
-.middle_box1 div{
-  width:40%;  
-}
+        .middle_box1 div {
+            width: 40%;
+        }
 
-.film_photo1 {
+    .film_photo1 {
         width: 50vh;
-}
+    }
 
     .film_photo2 {
         width: 35vh;
@@ -398,9 +398,5 @@ a:hover {
         border: 1vh solid #fff8f5;
         left: -30vh;
         bottom: -20vh;
-      
     }
-
 }
-
-
