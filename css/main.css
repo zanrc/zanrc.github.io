@@ -377,6 +377,23 @@ a {
     background-color: #c38d69;
 }
 
+.sentence{
+    position:absolute;
+}
+.xiao{
+    opacity:0;
+    animation:sentence_change 25s infinite;
+}
+
+@keyframes sentence_change{
+    0%,28%,100%{
+        opacity:0;
+    }
+    8%,20% {
+        opacity:1;
+    }   
+}
+
 @media screen and (min-width: 768px) {
     .middle_box1 {
         width: 100%;
