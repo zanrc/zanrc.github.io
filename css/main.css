@@ -281,10 +281,12 @@ a:hover {
    width: 70%;
 }
 
-.film_photo1{
-    width:25vh;
-    margin-left:5vh;
+.film_photo1 {
+    float:left;
+    width: 25vh;
+    margin-left: 5vh;
 }
+
 .film_photo2 {
     width: 20vh;
     position: absolute;
