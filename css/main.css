@@ -394,6 +394,19 @@ a {
     }   
 }
 
+
+@keyframes sun{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+
+    }
+    
+
+}
+
 @media screen and (min-width: 768px) {
     .middle_box1 {
         width: 100%;
