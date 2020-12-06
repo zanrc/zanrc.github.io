@@ -168,18 +168,17 @@ a:active {
 }
 
 .bottom_box {
-    margin-top: 3px;
+    margin-top: 2vh;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(230,226,223);
+    
     overflow: hidden;
 }
 
 
 .contact_bar {
-    margin-top: 3px;
+    margin-top: 3vh;
     width: 100%;
-    height: 20%;
+    height: 10vh;
     background-color: rgb(35,35,35);
     overflow: hidden;
     color: rgb(123,136,136);
@@ -197,12 +196,6 @@ a {
         color: #f5f6fa;
     }
 
-.qzone {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
 
 
 .navigation_bar {
@@ -258,7 +251,7 @@ a {
     background-color: #1e272e;
     top: 7vh;
     left: -1vh;
-    width: 40%;
+    width:40%;
     height: 0vh;
     transition: all 0.5s;
     display: flex;
@@ -385,6 +378,30 @@ a {
     animation:sentence_change 25s infinite;
 }
 
+
+@keyframes song{
+  0%{
+      background-position:0% 50%;
+  }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes sun{
+    0%{
+        transform:rotate(0deg);
+    }
+    
+    100%{
+        transform:rotate(360deg);
+
+    }
+    
+
+}
 @keyframes sentence_change{
     0%,28%,100%{
         opacity:0;
@@ -395,18 +412,14 @@ a {
 }
 
 
-@keyframes sun{
-    0%{
-        transform:rotate(0deg);
-    }
-    100%{
-        transform:rotate(360deg);
-
-    }
-    
-
+.lz_photo{
+    width:85%;
+    margin-left:15%;
 }
-
+.zl_photo {
+    width: 85%;
+    margin-right: 15%;
+}
 @media screen and (min-width: 768px) {
     .middle_box1 {
         width: 100%;
