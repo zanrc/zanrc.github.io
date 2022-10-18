@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="navigation_bar">
-        <div class="navigation_but" style="margin-left:0.5vh" id="navigation_but" @click="turn">
-            <div id="l1" class="line" style="" v-bind:class="{'active1':isActive}"></div>
-            <div id="l2" class="line line2" v-bind:class="{'active2':isActive}"></div>
-            <div id="l3" class="line" v-bind:class="{'active3':isActive}"></div>
+        <div class="navigation_but" style="margin-left:0.5vh" id="navigation_but">
+            <div id="l1" class="line"></div>
+            <div id="l2" class="line line2"></div>
+            <div id="l3" class="line"></div>
 
 
-            <div class="select_bar" v-bind:class="{'select_show':isActive}">
+            <div id="nav_biao" class="select_bar">
                 <a target="_blank" style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family:SimSun;" href="https://www.zhihu.com/people/zhang-run-chen-3">知乎</a>
                 <div style="height:0.2vh;background-color:#747d8c;width:70%;margin:0 auto;"></div>
                 <a target="_blank" style="color: #dfe4ea;display:block;font-size:150%;margin:0 auto; font-family: Georgia" href="https://space.bilibili.com/12427703">bilibili</a>
@@ -76,15 +76,15 @@
 
         <div class="middle_box1">
             <div style="margin:5% auto 0;">
-
                 <img src="http://m.qpic.cn/psc?/V53D2qDL070n760n5Vsf2oYknG3JIAwp/ruAMsa53pVQWN7FLK88i5tX67jwT*Mu6w5EONMLiRv.nNqz*7nbb4bffh9uK3JFYu0zkxxwkQMvnaIXu0V3i*TJtyLAzWbZN79OSvtzljKI!/b&bo=gALSAYAC0gEBCS4!&rf=viewer_4" style="width:100%" />
             </div>
         </div>
 
-        <div style="width:100%;height:35vh;"></div>
+
+        <div class="wlecome"></div>
         <div style="color:#c38d69;font-size:2vh;text-align:center;font-family: Georgia">WELCOME</div>
-        <div style="font-size:1vh;text-align:center;font-family:SimSun;">电影使我找回生活的细部</div>
-        <div style="font-size:1vh;text-align:center;font-family:SimSun;margin-bottom:5vh;">我们每个人都当过国王，当过夜莺</div>
+        <div style="font-size:2vh;text-align:center;font-family:SimSun;">电影使我找回生活的细部</div>
+        <div style="font-size:2vh;text-align:center;font-family:SimSun;margin-bottom:5vh;">我们每个人都当过国王，当过夜莺</div>
 
         <div class="film_text1">500 DAYS OF SUMMER</div>
 
@@ -190,7 +190,7 @@
             <div style="width:45%;height:30vh;float:right;">
                 <div style="font-size:5vh;font-weight:bold;font-family:SimSun;">南京市民</div>
                 <div style="font-size:5vh;font-weight:bold;font-family:SimSun;">李志</div>
-                <div style="width:100%;height:3vh"></div>
+                <div style="width:100%;height:6vh"></div>
                 <div style="font-size:1vh;font-family:SimSun;">"请你不要相信他的爱情</div>
                 <div style="font-size:1vh;font-family:SimSun;">你看黎明还没有来临</div>
                 <div style="font-size:1vh;font-family:SimSun;">请你不要相信他的关心</div>
@@ -199,34 +199,62 @@
         </div>
 
 
-      
 
 
         <div style="width:100%;height:8vh;"></div>
         <div style="width:100%;height:20vh;overflow:hidden">
             <div style="display:flex;justify-content:space-around;background-size:400%;width:100%;height:100%;background-image:linear-gradient(125deg,#353b48,#192a56,#273c75,#718093,#7f8fa6);animation:song 10s linear infinite ;">
                 <!--
-                    <div style="width:10vh">
-                        <div style="width:100%;height:3vh"></div>
-                        <img style="width:10vh;" src="css/s1.jpg" />
-                        <div style="width:100%;height:1vh"></div>
-                        <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">大城小爱</div>
-                    </div>
+            <div style="width:10vh">
+                <div style="width:100%;height:3vh"></div>
+                <img style="width:10vh;" src="css/s1.jpg" />
+                <div style="width:100%;height:1vh"></div>
+                <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">大城小爱</div>
+            </div>
 
-                    <div style="width:10vh">
-                        <div style="width:100%;height:3vh"></div>
-                        <img style="width:10vh;" src="css/s2.jpg" />
-                        <div style="width:100%;height:1vh"></div>
-                        <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">牡丹亭外</div>
-                    </div>
+            <div style="width:10vh">
+                <div style="width:100%;height:3vh"></div>
+                <img style="width:10vh;" src="css/s2.jpg" />
+                <div style="width:100%;height:1vh"></div>
+                <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">牡丹亭外</div>
+            </div>
 
-                    <div style="width:10vh">
-                        <div style="width:100%;height:3vh"></div>
-                        <img style="width:10vh;" src="css/s3.jpg" />
-                        <div style="width:100%;height:1vh"></div>
-                        <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">当爱已成往事</div>
-                    </div>
-                 -->
+            <div style="width:10vh">
+                <div style="width:100%;height:3vh"></div>
+                <img style="width:10vh;" src="css/s3.jpg" />
+                <div style="width:100%;height:1vh"></div>
+                <div style="width:100%;font-size:1vh;color:white;font-weight:bold;font-family:SimSun">当爱已成往事</div>
+            </div>
+
+
+            <audio controls="">
+            <source src="https://attachments-cdn.shimo.im/LJWVqFk04pbiSllV.mp3">
+            </audio>
+
+
+            <span class="ql-blot-attachment ql-align-center" data-name="李志 - 和你在一起.mp3" data-size="10163001" data-type="audio" data-url="https://uploader.shimo.im/f/LJWVqFk04pbiSllV.mp3" data-duration="253.988571" data-transcoded="https://uploader.shimo.im/f/LJWVqFk04pbiSllV!wav">
+                    <span id="attachment_2995" class="ql-attachment-wrapper ql-attachment-audio ql-attachment-pause" draggable="true" data-to-text-state="none" data-to-text-info="" data-to-text-prev-state="none" data-to-text-prev-info="" data-user-state="readonly"><span class="ql-attachment-audio-icon">
+                    <span class="icon-audio-attachment">
+                    </span>
+                    </span>
+
+                   
+
+                  
+                    
+                  
+                    
+              
+
+
+
+
+
+
+
+
+
+         -->
 
             </div>
         </div>
@@ -236,7 +264,7 @@
             <div style="width:45%;height:35vh;float:left">
                 <div style="width:100%;height:5vh;"></div>
                 <div style="font-size:5vh;font-weight:bold;font-family:SimSun;text-align:right">赵雷</div>
-                <div style="width:100%;height:3vh;"></div>
+                <div style="width:100%;height:6vh;"></div>
                 <div style="font-size:1vh;width:100%;font-family:SimSun;text-align:right">"我爱这世间清纯的女子</div>
                 <div style="font-size:1vh;width:100%;font-family:SimSun;text-align:right">只是他们都老去了</div>
                 <div style="font-size:1vh;width:100%;font-family:SimSun;text-align:right">我喜欢黑黑长长的辫子</div>
@@ -266,37 +294,35 @@
 
 
     <div class="contact_bar">
-        
+
     </div>
     <!--***************************************
-
-
-
-
-
-
-
 
            ********************************************************* -->
 
     <script>
-        new Vue({
-            el: '#navigation_but',
-            data: {
-                isActive: false
-            },
-            methods: {
-                turn: function (event) {
-                    this.isActive = !this.isActive;
-                }
-
+        var open_nev = 0; //0表示未打开
+        $("#navigation_but").click(function() {
+            if (open_nev == 0) {
+                open_nev = 1;
+                $("#l1").addClass("active1");
+                $("#l2").addClass("active2");
+                $("#l3").addClass("active3");
+                $("#nav_biao").addClass("select_show");
+            } else {
+                open_nev = 0;
+                $("#l1").removeClass("active1");
+                $("#l2").removeClass("active2");
+                $("#l3").removeClass("active3");
+                $("#nav_biao").removeClass("select_show");
             }
-        })
+
+        });
 
 
         var a_idx = 0;
-        jQuery(document).ready(function ($) {
-            $("body").click(function (e) {
+        jQuery(document).ready(function($) {
+            $("body").click(function(e) {
                 var a = new Array("⭐", "🌙", "♥", "⚡", "🦄", "🔆", "🎵", "💋", "🐷", "🎈", "🦋", "💭");
                 var $i = $("<span></span>").text(a[a_idx]);
                 a_idx = (a_idx + 1) % a.length;
@@ -312,23 +338,17 @@
                 });
                 $("body").append($i);
                 $i.animate({
-                    "top": y - 180,
-                    "opacity": 0
-                },
+                        "top": y - 180,
+                        "opacity": 0
+                    },
                     1500,
-                    function () {
+                    function() {
                         $i.remove();
                     });
             });
         });
-
-
-
     </script>
-
-
 </body>
+
 </html>
-
-
 
